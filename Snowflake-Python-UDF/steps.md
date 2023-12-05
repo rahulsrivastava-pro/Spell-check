@@ -8,3 +8,18 @@
 3. Execute the "udf.sql"
 4. Test It
    1. Select SPELLCHECKER('This is a sentenceererere to checkk!')
+5. Result [Example]: 
+   
+    {
+        "iscorrect": "N", ["Y" or "N" depending if the senetence is correct]
+        "errorcount": 3,  [gives count of spelling mistakes]
+        "errors":         [list of misspelled words and the suggestions for correct word]
+            {
+            "sentenceeee": "sentence", 
+            "sureeeee": "sure", 
+            "checkk": "check"
+            }
+    }
+
+   
+6. Added the python file - "spellchecker.py" for checking the UDF logic and future extensions 
